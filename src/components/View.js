@@ -3,13 +3,11 @@ import styled from "styled-components";
 import Article from "./Article";
 import EditForm from "./EditForm";
 import axiosWithAuth from "../utils/axiosWithAuth";
-import { useParams } from "react-router-dom";
 
 const View = (props) => {
   const [articles, setArticles] = useState([]);
   const [editing, setEditing] = useState(false);
   const [editId, setEditId] = useState();
-  const { id } = useParams();
 
   useEffect(() => {
     axiosWithAuth()

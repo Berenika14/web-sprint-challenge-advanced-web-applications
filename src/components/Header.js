@@ -11,10 +11,10 @@ const Header = () => {
           <Link to="/">Login</Link>
         </li>
         <li>
-          <Link to="view">View</Link>
+          <Link to="/view">View</Link>
         </li>
         <li>
-          <Link to="logout">Logout</Link>
+          <Link to="/logout">Logout</Link>
         </li>
       </MenuStyle>
     </HeaderStyle>
