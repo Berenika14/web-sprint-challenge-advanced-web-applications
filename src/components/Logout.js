@@ -10,7 +10,6 @@ const Logout = () => {
       .post(`/logout`)
       .then((resp) => {
         localStorage.removeItem("token");
-
         push("/login");
       })
       .catch((err) => {
@@ -18,11 +17,7 @@ const Logout = () => {
       });
   }, []);
 
-  return (
-    <div>
-      <h2>Your are Logged out</h2>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Logout;
